@@ -36,25 +36,21 @@ if __name__ == '__main__':
 
     # Set Device
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    for seed in [1, 2, 3]:
-        # Set Seed
-        args.random_seed = seed
-        random_seed = set_seed(args.random_seed)
+    # Set Seed
+    random_seed = set_seed(args.random_seed)
 
-        # Create Delayed Environment
-        env, eval_env = make_delayed_env(args, random_seed, obs_delayed_steps=args.obs_delayed_steps, act_delayed_steps=args.act_delayed_steps)
+    # Create Delayed Environment
+    env, eval_env = make_delayed_env(args, random_seed, obs_delayed_steps=args.obs_delayed_steps, act_delayed_steps=args.act_delayed_steps)
 
-        state_dim = env.observation_space.shape[0]
-        action_dim = env.action_space.shape[0]
-        action_bound = [env.action_space.low[0], env.action_space.high[0]]
+    state_dim = env.observation_space.shape[0]
+    action_dim = env.action_space.shape[0]
+    action_bound = [env.action_space.low[0], env.action_space.high[0]]
 
-        print(f"Environment: {args.env_name}, Obs. Delayed Steps: {args.obs_delayed_steps}, Act. Delayed Steps: {args.act_delayed_steps}, Random Seed: {args.random_seed}", "\n")
+    print(f"Environment: {args.env_name}, Obs. Delayed Steps: {args.obs_delayed_steps}, Act. Delayed Steps: {args.act_delayed_steps}, Random Seed: {args.random_seed}", "\n")
 
-        # Create Agent
-        agent = BPQLAgent(args, state_dim, action_dim, action_bound, env.action_space, device)
+    # Create Agent
+    agent = BPQLAgent(args, state_dim, action_dim, action_bound, env.action_space, device)
 
-        # Create Trainer & Train
-        trainer = Trainer(env, eval_env, agent, args)
-        trainer.train()
-
-
+    # Create Trainer & Train
+    trainer = Trainer(env, eval_env, agent, args)
+    trainer.train()
