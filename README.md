@@ -10,5 +10,9 @@
 >numpy == 1.24.3<br/>
 
 ## How to Run?
+### Run the script file 
 >chmod +x run.sh<br/>
 >./run.sh
+
+### or run main.py with arguments
+> python main.py --env HalfCheetah-v3 --random-seed 2023 --obs-delayed-steps 5 --act-delayed-steps 4 --max-step 1000000
