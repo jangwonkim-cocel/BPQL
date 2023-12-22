@@ -1,7 +1,6 @@
 ## Belief Projcetion-Based Reinforcement Learning for Environments with Delayed Feedback
-
 >PyTorch implementation of Belief Projection-Based Q-Learning (BPQL).<br/>
->See: https://openreview.net/pdf?id=sq0m11cUMV
+>See the paper here: https://openreview.net/pdf?id=sq0m11cUMV
 
 # Test Environment
 >python == 3.8.10<br/>
