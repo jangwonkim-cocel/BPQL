@@ -24,7 +24,7 @@ class BPQLAgent:  # SAC for the base learning algorithm
         self.tau = args.tau
 
         self.actor = GaussianPolicy(args, args.obs_delayed_steps + args.act_delayed_steps, state_dim, action_dim, action_bound, args.hidden_dims, F.relu, device).to(device)
-        self.critic = Twin_Q_net(state_dim, action_dim, device, args.hidden_dims).to(device)  # Projected Q-network.
+        self.critic = Twin_Q_net(state_dim, action_dim, device, args.hidden_dims).to(device)  # Network for the beta Q-values.
         self.target_critic = Twin_Q_net(state_dim, action_dim, device, args.hidden_dims).to(device)
 
         self.actor_optimizer = torch.optim.Adam(self.actor.parameters(), lr=args.actor_lr)
