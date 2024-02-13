@@ -8,7 +8,7 @@
 
 #!/bin/bash
 python main.py \
---env "HalfCheetah-v3" \
+--env-name "HalfCheetah-v3" \
 --random-seed 2023 \
 --obs-delayed-steps 5 \
 --act-delayed-steps 4 \
