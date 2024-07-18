@@ -1,7 +1,7 @@
 # Belief Projection-Based Reinforcement Learning for Environments with Delayed Feedback
 This repository contains the PyTorch implementation of Belief Projection-Based Q-Learning (BPQL) introduced in the paper:
 
-**Belief Projection-Based Reinforcement Learning for Environments with Delayed Feedback** by Jangwon Kim et al., presented at Advances in Neural Information Processing Systems (NeurIPS) 2023.
+**Belief Projection-Based Reinforcement Learning for Environments with Delayed Feedback** by Jangwon Kim et al., presented at Advances in Neural Information Processing Systems (NeurIPS), 2023.
 
 
 ## Paper Link
