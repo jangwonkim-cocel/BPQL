@@ -8,11 +8,13 @@ This repository contains the PyTorch implementation of **Belief Projection-Based
 >See the paper here: https://proceedings.neurips.cc/paper_files/paper/2023/hash/0252a434b18962c94910c07cd9a7fecc-Abstract-Conference.html
 
 ## Test Environment
->python == 3.8.10<br/>
->gym == 0.26.2<br/>
->mujoco_py == 2.1.2.14<br/>
->pytorch == 2.1.0<br/>
->numpy == 1.24.3<br/>
+```
+python == 3.8.10
+gym == 0.26.2
+mujoco_py == 2.1.2.14
+pytorch == 2.1.0
+numpy == 1.24.3
+```
 
 ## How to Run?
 ### Run the script file 
@@ -23,7 +25,7 @@ This repository contains the PyTorch implementation of **Belief Projection-Based
 
 ### or run main.py with arguments
 ```
-> python main.py --env-name HalfCheetah-v3 --random-seed 2023 --obs-delayed-steps 5 --act-delayed-steps 4 --max-step 1000000
+python main.py --env-name HalfCheetah-v3 --random-seed 2023 --obs-delayed-steps 5 --act-delayed-steps 4 --max-step 1000000
 ```
 ---
 
