@@ -17,7 +17,7 @@ This repository contains the PyTorch implementation of **Belief Projection-Based
 ## How to Run?
 ### Run the script file 
 ```
->chmod +x run.sh<br/>
+>chmod +x run.sh
 >./run.sh
 ```
 
