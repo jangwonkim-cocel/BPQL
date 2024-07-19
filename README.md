@@ -29,7 +29,7 @@ python main.py --env-name HalfCheetah-v3 --random-seed 2023 --obs-delayed-steps 
 ```
 ---
 
-## Citation
+## Citation Example
 ```
 @inproceedings{kim2023cocel,
    author = {Kim, Jangwon and Kim, Hangyeol and Kang, Jiwook and Baek, Jongchan and Han, Soohee},
