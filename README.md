@@ -1,13 +1,49 @@
-# Belief Projection-Based Reinforcement Learning for Environments with Delayed Feedback
-This repository contains the PyTorch implementation of **Belief Projection-Based Q-Learning (BPQL)** introduced in the paper:
+<div align="center">
+  <h1>Belief Projection-Based Q-Learning</h1>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.8-blue?logo=python&style=flat-square" alt="Python Badge"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://pytorch.org/">
+    <img src="https://img.shields.io/badge/PyTorch-2.1.0-%23EE4C2C?logo=pytorch&style=flat-square" alt="PyTorch Badge"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/0252a434b18962c94910c07cd9a7fecc-Abstract-Conference.html">
+    <img src="https://img.shields.io/badge/NeurIPS%202023-Paper-%23007ACC?style=flat-square" alt="NeurIPS 2023 Badge"/>
+  </a>
+</div>
 
-**Belief Projection-Based Reinforcement Learning for Environments with Delayed Feedback** by Jangwon Kim et al., presented at Advances in Neural Information Processing Systems (NeurIPS), 2023.
+## [NeurIPS 2023] Official Implentation of Belief Projection-Based Q-Learning (BPQL)
+This repository contains the PyTorch implementation of **BPQL** introduced in the paper: **_Belief Projection-Based Reinforcement Learning for Environments with Delayed Feedback_** by Jangwon Kim et al., presented at Advances in Neural Information Processing Systems (NeurIPS), 2023.
 
 
-## Paper Link
->See the paper here: https://proceedings.neurips.cc/paper_files/paper/2023/hash/0252a434b18962c94910c07cd9a7fecc-Abstract-Conference.html
+## 📄 Paper Link
+>You can see the paper here: https://proceedings.neurips.cc/paper_files/paper/2023/hash/0252a434b18962c94910c07cd9a7fecc-Abstract-Conference.html
 
-## Test Environment
+
+## 🚀 Achieves S.O.T.A. Performance, Yet Very Simple to Implement
+
+* **Supports both observation delay, action delay, and their combination**
+* **Performance Plot ⬇️**
+<p align="center">
+  <img src="./figures/plot.png" alt="BPQL Performance Plot" width="600"/>
+</p>
+
+
+## ▶️ How to Run?
+### Option 1: Run the script file 
+```
+>chmod +x run.sh
+>./run.sh
+```
+
+### Option 2: Run main.py with arguments
+```
+python main.py --env-name HalfCheetah-v3 --random-seed 2023 --obs-delayed-steps 5 --act-delayed-steps 4 --max-step 1000000
+```
+---
+
+## ✅Test Environment
 ```
 python == 3.8.10
 gym == 0.26.2
@@ -16,20 +52,7 @@ pytorch == 2.1.0
 numpy == 1.24.3
 ```
 
-## How to Run?
-### Run the script file 
-```
->chmod +x run.sh
->./run.sh
-```
-
-### or run main.py with arguments
-```
-python main.py --env-name HalfCheetah-v3 --random-seed 2023 --obs-delayed-steps 5 --act-delayed-steps 4 --max-step 1000000
-```
----
-
-## Citation Example
+## 📚 Citation Example
 ```
 @inproceedings{kim2023cocel,
    author = {Kim, Jangwon and Kim, Hangyeol and Kang, Jiwook and Baek, Jongchan and Han, Soohee},
