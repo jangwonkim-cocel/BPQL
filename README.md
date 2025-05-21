@@ -11,6 +11,8 @@
   <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/0252a434b18962c94910c07cd9a7fecc-Abstract-Conference.html">
     <img src="https://img.shields.io/badge/NeurIPS%202023-Paper-%23007ACC?style=flat-square" alt="NeurIPS 2023 Badge"/>
   </a>
+    <br/><br/>
+  <img src="./figures/neurips_logo.png" width="200px" style="margin: 0 10px;"/>
 </div>
 
 ## [NeurIPS 2023] Official Implentation of Belief Projection-Based Q-Learning (BPQL)
