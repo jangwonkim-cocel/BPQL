@@ -15,7 +15,7 @@
   <img src="./figures/neurips_logo.png" width="200px" style="margin: 0 10px;"/>
 </div>
 
-## [NeurIPS 2023] Official Implentation of Belief Projection-Based Q-Learning (BPQL)
+## [NeurIPS 2023] Official Implementation of Belief Projection-Based Q-Learning (BPQL)
 This repository contains the PyTorch implementation of **BPQL** introduced in the paper: **_Belief Projection-Based Reinforcement Learning for Environments with Delayed Feedback_** by Jangwon Kim et al., presented at Advances in Neural Information Processing Systems (NeurIPS), 2023.
 
 
